@@ -23,7 +23,17 @@ export function Button_30b920b53608c0a320eeb0f8c09e58d5 () {
   )
 }
 
-export function Box_ecc9574ef0f1180cbad7b6ed4bbb5d28 () {
+export function Input_42026180c35c2f6a76b220cc3f019fc5 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_change_c1fe93b939c866e1de40fb642568d5e0 = useCallback((_e0) => addEvents([Event("state.state.set_question", {value:_e0.target.value})], (_e0), {}), [addEvents, Event])
+
+  return (
+    <Input onChange={on_change_c1fe93b939c866e1de40fb642568d5e0} placeholder={`Ask a question`} sx={{"borderWidth": "1px", "padding": "1em", "boxShadow": "rgba(0, 0, 0, 0.15) 0px 2px 8px"}} type={`text`}/>
+  )
+}
+
+export function Box_97da31d071c31b0a692bc9b5a788754e () {
   const state__state = useContext(StateContexts.state__state)
 
 
@@ -47,23 +57,13 @@ export function Box_ecc9574ef0f1180cbad7b6ed4bbb5d28 () {
   )
 }
 
-export function Input_42026180c35c2f6a76b220cc3f019fc5 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_change_c1fe93b939c866e1de40fb642568d5e0 = useCallback((_e0) => addEvents([Event("state.state.set_question", {value:_e0.target.value})], (_e0), {}), [addEvents, Event])
-
-  return (
-    <Input onChange={on_change_c1fe93b939c866e1de40fb642568d5e0} placeholder={`Ask a question`} sx={{"borderWidth": "1px", "padding": "1em", "boxShadow": "rgba(0, 0, 0, 0.15) 0px 2px 8px"}} type={`text`}/>
-  )
-}
-
 export default function Component() {
 
   return (
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Container>
-  <Box_ecc9574ef0f1180cbad7b6ed4bbb5d28/>
+  <Box_97da31d071c31b0a692bc9b5a788754e/>
   <HStack>
   <Input_42026180c35c2f6a76b220cc3f019fc5/>
   <Button_30b920b53608c0a320eeb0f8c09e58d5/>
