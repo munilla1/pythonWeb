@@ -11,6 +11,16 @@ import NextHead from "next/head"
 
 
 
+export function Input_42026180c35c2f6a76b220cc3f019fc5 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_change_c1fe93b939c866e1de40fb642568d5e0 = useCallback((_e0) => addEvents([Event("state.state.set_question", {value:_e0.target.value})], (_e0), {}), [addEvents, Event])
+
+  return (
+    <Input onChange={on_change_c1fe93b939c866e1de40fb642568d5e0} placeholder={`Ask a question`} sx={{"borderWidth": "1px", "padding": "1em", "boxShadow": "rgba(0, 0, 0, 0.15) 0px 2px 8px"}} type={`text`}/>
+  )
+}
+
 export function Button_30b920b53608c0a320eeb0f8c09e58d5 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
@@ -23,17 +33,7 @@ export function Button_30b920b53608c0a320eeb0f8c09e58d5 () {
   )
 }
 
-export function Input_42026180c35c2f6a76b220cc3f019fc5 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_change_c1fe93b939c866e1de40fb642568d5e0 = useCallback((_e0) => addEvents([Event("state.state.set_question", {value:_e0.target.value})], (_e0), {}), [addEvents, Event])
-
-  return (
-    <Input onChange={on_change_c1fe93b939c866e1de40fb642568d5e0} placeholder={`Ask a question`} sx={{"borderWidth": "1px", "padding": "1em", "boxShadow": "rgba(0, 0, 0, 0.15) 0px 2px 8px"}} type={`text`}/>
-  )
-}
-
-export function Box_97da31d071c31b0a692bc9b5a788754e () {
+export function Box_1080c84ea605d825440bbf15a1bdd629 () {
   const state__state = useContext(StateContexts.state__state)
 
 
@@ -63,7 +63,7 @@ export default function Component() {
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Container>
-  <Box_97da31d071c31b0a692bc9b5a788754e/>
+  <Box_1080c84ea605d825440bbf15a1bdd629/>
   <HStack>
   <Input_42026180c35c2f6a76b220cc3f019fc5/>
   <Button_30b920b53608c0a320eeb0f8c09e58d5/>
